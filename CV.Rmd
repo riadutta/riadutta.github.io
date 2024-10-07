@@ -1,0 +1,69 @@
+---
+title: "CV"
+pagetitle: CV
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<br>
+
+[Here](https://www.dropbox.com/scl/fi/imm6u0kllyl7wskys316l/Dutta_Ria_CV.pdf?rlkey=lgdsi06ep8zraymppilahj3ry&st=528i77hq&dl=0) is my complete CV.
+
+<br>
+
+### Education
+
+ - 2017-2019 - Master of Arts in Public Policy, Azim Premji University, Bengaluru
+ 
+ - 2014-2017 - Bachelor of Arts in Social Sciences, Tata Institute of Social Sciences
+
+<br>
+
+### Research Experience
+
+- 2023-Present - Research Assistant, with Dr. M. R. Sharan, Dr. Siddharth George, Dr. Siddharth Hari and Apurva Bamezai
+
+- 2021-2023 - Research Assistant, IMAGO Global Grassroots with Michael Walton
+
+- 2020-2021 - Research Assistant, J-PAL South Asia with Dr.Seema Jayachandran and Dr. Diva Dhar
+
+- 2019-2021 - Research Assistant, IFMR-LEAD  
+
+
+<br>
+
+### Other Professional Exeperience
+
+- 2018 - Intern, World Resources Institute, Bengaluru 
+
+- 2018 - Intern, Centre for the Study of Developing Societies (CSDS) Lokniti, New Delhi
+
+- 2017 - Intern, Centre for Legislative Research and Advocacy (CLRA), New Delhi
+
+
+<br>
+
+
+
+### Leadership 
+
+- 2020-2021 - Project Officer, UN Sustainable Development Solutions Network – Youth
+
+- 2021-Present - Director, [Women in Economics and Policy](https://www.womenineconpolicy.com/) 
+
+<br>
+
+### Conferences and Workshops
+
+- 2022 - Lady Shri Ram College, Delhi University, Dr Saroj Gupta Memorial Paper Presentation
+
+- 2022 - Labour Economics Conference, Indian Society of Labour Economics Conference, IIT Roorkee
+
+- 2021 - xSDG UnConference, Dalberg, J-PAL South Asia, Breakthrough India
+
+
+
+<br>
