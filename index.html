@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -21,6 +20,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
   <style>
+    /* Center name at the top */
     h1 {
       font-size: 38px;
       text-align: center;
@@ -28,7 +28,9 @@
       font-weight: normal;
     }
 
+    /* Custom navbar styles to center align */
     .navbar-custom {
+      display: flex;
       justify-content: center;
       background-color: #fff;
       border-top: 1px solid #ddd;
@@ -37,6 +39,7 @@
       font-size: 16px;
     }
 
+    /* Style for individual links */
     .navbar-custom a {
       color: #333;
       margin: 0 15px;
@@ -44,15 +47,18 @@
       font-weight: bold;
     }
 
+    /* Hover effect for links */
     .navbar-custom a:hover {
       color: #007bff;
       text-decoration: none;
     }
 
+    /* Icons inside the links */
     .navbar-custom .fa {
       margin-right: 5px;
     }
 
+    /* Styling for image */
     .container img {
       max-width: 40%;
       float: left;
@@ -60,10 +66,13 @@
       margin-bottom: 15px;
     }
 
-    /* Adjust for mobile */
+    /* Adjust navbar for mobile responsiveness */
     @media (max-width: 768px) {
+      .navbar-custom {
+        flex-direction: column;
+      }
+
       .navbar-custom a {
-        display: block;
         margin: 10px 0;
       }
 
@@ -80,7 +89,7 @@
   <!-- Name at the top -->
   <h1>Ria Dutta</h1>
 
-  <!-- Navigation Bar -->
+  <!-- Centered Navigation Bar -->
   <nav class="navbar navbar-custom">
     <a href="index.html">Home</a>
     <a href="CV.html">CV</a>
@@ -105,4 +114,3 @@
 </body>
 
 </html>
-
