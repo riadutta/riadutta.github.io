@@ -4,132 +4,60 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-  <title>CV</title>
-
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
-  <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-  <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-  <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+  <title>CV - Ria Dutta</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
   <style>
+    /* Center name at the top */
     h1 {
-      font-size: 34px;
-    }
-
-    h1.title {
       font-size: 38px;
+      text-align: center;
+      margin-top: 40px;
+      font-weight: normal;
     }
 
-    h2 {
-      font-size: 30px;
-    }
-
-    h3 {
-      font-size: 24px;
-    }
-
-    h4 {
-      font-size: 18px;
-    }
-
-    h5 {
+    /* Custom navbar styles to center align */
+    .navbar-custom {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
       font-size: 16px;
     }
 
-    h6 {
-      font-size: 12px;
+    /* Style for individual links */
+    .navbar-custom a {
+      color: #333;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    code {
-      color: inherit;
-      background-color: rgba(0, 0, 0, 0.04);
+    /* Hover effect for links */
+    .navbar-custom a:hover {
+      color: #007bff;
+      text-decoration: none;
     }
 
-    pre:not([class]) {
-      background-color: white
-    }
-  </style>
-
-  <script src="site_libs/navigation-1.1/tabsets.js"></script>
-  <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-  <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-  <style type="text/css">
-    code {
-      white-space: pre-wrap;
+    /* Icons inside the links */
+    .navbar-custom .fa {
+      margin-right: 5px;
     }
 
-    span.smallcaps {
-      font-variant: small-caps;
-    }
+    /* Adjust navbar for mobile responsiveness */
+    @media (max-width: 768px) {
+      .navbar-custom {
+        flex-direction: column;
+      }
 
-    span.underline {
-      text-decoration: underline;
-    }
-
-    div.column {
-      display: inline-block;
-      vertical-align: top;
-      width: 50%;
-    }
-
-    div.hanging-indent {
-      margin-left: 1.5em;
-      text-indent: -1.5em;
-    }
-
-    ul.task-list {
-      list-style: none;
-    }
-  </style>
-
-  <style type="text/css">
-    code {
-      white-space: pre;
-    }
-  </style>
-
-  <style type="text/css">
-    .main-container {
-      max-width: 940px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    .tabbed-pane {
-      padding-top: 12px;
-    }
-
-    .html-widget {
-      margin-bottom: 20px;
-    }
-
-    button.code-folding-btn:focus {
-      outline: none;
-    }
-
-    summary {
-      display: list-item;
-    }
-
-    details>summary>p:only-child {
-      display: inline;
-    }
-
-    pre code {
-      padding: 0;
+      .navbar-custom a {
+        margin: 10px 0;
+      }
     }
   </style>
 
@@ -137,134 +65,61 @@
 
 <body>
 
-  <div class="container-fluid main-container">
+  <!-- Name at the top -->
+  <h1>Ria Dutta</h1>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Ria Dutta</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="CV.html">CV</a></li>
-            <li><a href="research.html">Research</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="mailto:28.riad@gmail.com">
-                <span class="fa fa-envelope fa-lg"></span>
-              </a>
-            </li>
-            <li>
-              <a href="http://github.com/riadutta/">
-                <span class="fa fa-github fa-lg"></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/ria__dutta">
-                <span class="fa fa-twitter fa-lg"></span>
-              </a>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div><!--/.container -->
-    </div><!--/.navbar -->
+  <!-- Centered Navigation Bar -->
+  <nav class="navbar navbar-custom">
+    <a href="index.html">Home</a>
+    <a href="CV.html">CV</a>
+    <a href="research.html">Research</a>
+    <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
+    <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
+  </nav>
 
-    <div id="header">
-      <h1 class="title toc-ignore">CV</h1>
-    </div>
-
-    <p><br></p>
+  <div class="container">
+    <h2>CV</h2>
     <p><a href="https://www.dropbox.com/scl/fi/imm6u0kllyl7wskys316l/Dutta_Ria_CV.pdf?rlkey=lgdsi06ep8zraymppilahj3ry&st=528i77hq&dl=0">Here</a> is my complete CV.</p>
 
-    <div id="education" class="section level3">
-      <h3>Education</h3>
-      <ul>
-        <li>
-          <p>2017-2019 - Master of Arts in Public Policy, Azim Premji University, Bengaluru</p>
-        </li>
-        <li>
-          <p>2014-2017 - Bachelor of Arts in Social Sciences, Tata Institute of Social Sciences</p>
-        </li>
-      </ul>
-    </div>
+    <h3>Education</h3>
+    <ul>
+      <li>2017-2019 - Master of Arts in Public Policy, Azim Premji University, Bengaluru</li>
+      <li>2014-2017 - Bachelor of Arts in Social Sciences, Tata Institute of Social Sciences</li>
+    </ul>
 
-    <div id="research-experience" class="section level3">
-      <h3>Research Experience</h3>
-      <ul>
-        <li>
-          <p>2023-Present - Research Assistant, with Dr. M. R. Sharan, Dr. Siddharth George, Dr. Siddharth Hari and Apurva Bamezai</p>
-        </li>
-        <li>
-          <p>2021-2023 - Research Assistant, IMAGO Global Grassroots with Michael Walton</p>
-        </li>
-        <li>
-          <p>2020-2021 - Research Assistant, J-PAL South Asia with Dr.Seema Jayachandran and Dr. Diva Dhar</p>
-        </li>
-        <li>
-          <p>2019-2021 - Research Assistant, IFMR-LEAD</p>
-        </li>
-      </ul>
-    </div>
+    <h3>Research-related Experience</h3>
+    <ul>
+      <li>2023-Present - Research Assistant, with Dr. M. R. Sharan, Dr. Siddharth George, Dr. Siddharth Hari, and Apurva Bamezai</li>
+      <li>2021-2023 - Research Assistant, IMAGO Global Grassroots with Michael Walton</li>
+      <li>2020-2021 - Research Assistant, J-PAL South Asia with Dr. Seema Jayachandran and Dr. Diva Dhar</li>
+      <li>2019-2021 - Research Assistant, IFMR LEAD</li>
+    </ul>
 
-    <div id="other-professional-experience" class="section level3">
-      <h3>Other Professional Experience</h3>
-      <ul>
-        <li>
-          <p>2018 - Intern, World Resources Institute, Bengaluru</p>
-        </li>
-        <li>
-          <p>2018 - Intern, Centre for the Study of Developing Societies (CSDS) Lokniti, New Delhi</p>
-        </li>
-        <li>
-          <p>2017 - Intern, Centre for Legislative Research and Advocacy (CLRA), New Delhi</p>
-        </li>
-      </ul>
-    </div>
+    <h3>Other Professional Experience</h3>
+    <ul>
+      <li>2018 - Intern, World Resources Institute, Bengaluru</li>
+      <li>2018 - Intern, Centre for the Study of Developing Societies (CSDS) Lokniti, New Delhi</li>
+      <li>2017 - Intern, Centre for Legislative Research and Advocacy (CLRA), New Delhi</li>
+    </ul>
 
-    <div id="leadership" class="section level3">
-      <h3>Leadership</h3>
-      <ul>
-        <li>
-          <p>2020-2021 - Project Officer, UN Sustainable Development Solutions Network – Youth</p>
-        </li>
-        <li>
-          <p>2021-Present - Director, <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a></p>
-        </li>
-      </ul>
-    </div>
+    <h3>Leadership</h3>
+    <ul>
+      <li>2020-2021 - Project Officer, UN Sustainable Development Solutions Network – Youth</li>
+      <li>2021-Present - Director, <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a></li>
+    </ul>
 
-    <div id="conferences-and-workshops" class="section level3">
-      <h3>Conferences and Workshops</h3>
-      <ul>
-        <li>
-          <p>2022 - Lady Shri Ram College, Delhi University, Dr Saroj Gupta Memorial Paper Presentation</p>
-        </li>
-        <li>
-          <p>2022 - Labour Economics Conference, Indian Society of Labour Economics Conference, IIT Roorkee</p>
-        </li>
-        <li>
-          <p>2021 - xSDG UnConference, Dalberg, J-PAL South Asia, Breakthrough India</p>
-        </li>
-      </ul>
-    </div>
-
+    <h3>Conferences and Workshops</h3>
+    <ul>
+      <li>2022 - Lady Shri Ram College, Delhi University, Dr Saroj Gupta Memorial Paper Presentation</li>
+      <li>2022 - Labour Economics Conference, Indian Society of Labour Economics Conference, IIT Roorkee</li>
+      <li>2021 - xSDG UnConference, Dalberg, J-PAL South Asia, Breakthrough India</li>
+    </ul>
   </div>
 
-  <script>
-    $(document).ready(function () {
-      window.buildTabsets("TOC");
-      $('.tabset-dropdown > .nav-tabs > li').click(function () {
-        $(this).parent().toggleClass('nav-tabs');
-      });
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
 </body>
 
