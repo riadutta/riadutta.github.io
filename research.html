@@ -10,15 +10,23 @@
     gtag('js', new Date());
     gtag('config', 'G-HPCM1RC0P8');
   </script>
-  
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV - Ria Dutta</title>
 
+  <!-- Bootstrap and FontAwesome CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
   <style>
+    /* Main container to center align the content */
+    .main-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
     /* Center name at the top */
     h1 {
       font-size: 38px;
@@ -62,9 +70,40 @@
       .navbar-custom {
         flex-direction: column;
       }
+
       .navbar-custom a {
         margin: 10px 0;
       }
+    }
+
+    /* Styling for the content sections */
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h3 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    /* Hyperlink styling */
+    a {
+      color: #007bff;
+    }
+
+    a:hover {
+      text-decoration: none;
     }
   </style>
 
@@ -72,22 +111,23 @@
 
 <body>
 
-  <!-- Name at the top -->
-  <h1>Ria Dutta</h1>
+  <div class="main-container">
 
-  <!-- Centered Navigation Bar -->
-  <nav class="navbar navbar-custom">
-    <a href="index.html">Home</a>
-    <a href="CV.html">CV</a>
-    <a href="research.html">Research</a>
-    <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
-    <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
-  </nav>
-    <div id="header">
-      <h1 class="title toc-ignore">
-        <center><br />Research<br /></center>
-      </h1>
+    <!-- Name at the top -->
+    <h1>Ria Dutta</h1>
+
+    <!-- Centered Navigation Bar -->
+    <nav class="navbar navbar-custom">
+      <a href="index.html">Home</a>
+      <a href="CV.html">CV</a>
+      <a href="research.html">Research</a>
+      <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
+      <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
+    </nav>
+
+    <div id="header" class="section">
+      <h1 class="title toc-ignore">Research</h1>
     </div>
 
     <div id="policy-writing" class="section level3">
