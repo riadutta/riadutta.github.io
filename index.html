@@ -29,9 +29,22 @@
       font-weight: normal;
     }
 
+    /* Custom navbar styles for center alignment */
+    .navbar-custom {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      font-size: 16px;
+    }
+
     /* Style for individual links */
     .navbar-custom a {
       color: #333;
+      margin: 0 15px;
+      text-decoration: none;
       font-weight: bold;
     }
 
@@ -39,6 +52,11 @@
     .navbar-custom a:hover {
       color: #007bff;
       text-decoration: none;
+    }
+
+    /* Icons inside the links */
+    .navbar-custom .fa {
+      margin-right: 5px;
     }
 
     /* Adjust navbar for mobile responsiveness */
@@ -60,34 +78,14 @@
   <!-- Name at the top -->
   <h1>Ria Dutta</h1>
 
-  <!-- Full-width Navigation Bar -->
-  <nav class="navbar navbar-default navbar-custom">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Ria Dutta</a>
-      </div>
-
-      <!-- Collect the nav links for toggling -->
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="CV.html">CV</a></li>
-          <li class="active"><a href="research.html">Research</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a></li>
-          <li><a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+  <!-- Centered Navigation Bar -->
+  <nav class="navbar navbar-custom">
+    <a href="index.html">Home</a>
+    <a href="CV.html">CV</a>
+    <a href="research.html">Research</a>
+    <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
+    <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
   </nav>
 
   <div class="container">
