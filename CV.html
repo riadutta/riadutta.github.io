@@ -10,15 +10,23 @@
     gtag('js', new Date());
     gtag('config', 'G-HPCM1RC0P8');
   </script>
-  
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV - Ria Dutta</title>
 
+  <!-- Bootstrap and FontAwesome CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
   <style>
+    /* Main container to center align the content */
+    .main-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
     /* Center name at the top */
     h1 {
       font-size: 38px;
@@ -62,9 +70,39 @@
       .navbar-custom {
         flex-direction: column;
       }
+
       .navbar-custom a {
         margin: 10px 0;
       }
+    }
+
+    /* Styling for the content sections */
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h2, .section h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    /* Hyperlink styling */
+    a {
+      color: #007bff;
+    }
+
+    a:hover {
+      text-decoration: none;
     }
   </style>
 
@@ -72,54 +110,73 @@
 
 <body>
 
-  <!-- Name at the top -->
-  <h1>Ria Dutta</h1>
+  <div class="main-container">
 
-  <!-- Centered Navigation Bar -->
-  <nav class="navbar navbar-custom">
-    <a href="index.html">Home</a>
-    <a href="CV.html">CV</a>
-    <a href="research.html">Research</a>
-    <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
-    <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
-  </nav>
+    <!-- Name at the top -->
+    <h1>Ria Dutta</h1>
 
-  <div class="container">
-    <h2>CV</h2>
-    <p><a href="https://www.dropbox.com/scl/fi/imm6u0kllyl7wskys316l/Dutta_Ria_CV.pdf?rlkey=lgdsi06ep8zraymppilahj3ry&st=528i77hq&dl=0">Here</a> is my complete CV.</p>
+    <!-- Centered Navigation Bar -->
+    <nav class="navbar navbar-custom">
+      <a href="index.html">Home</a>
+      <a href="CV.html">CV</a>
+      <a href="research.html">Research</a>
+      <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
+      <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
+    </nav>
 
-    <h3>Education</h3>
-    <ul>
-      <li>2017-2019 - Master of Arts in Public Policy, Azim Premji University, Bengaluru</li>
-      <li>2014-2017 - Bachelor of Arts in Social Sciences, Tata Institute of Social Sciences</li>
-    </ul>
+    <!-- CV Content Section -->
+    <div class="section">
+      <h2>CV</h2>
+      <p><a href="https://www.dropbox.com/scl/fi/imm6u0kllyl7wskys316l/Dutta_Ria_CV.pdf?rlkey=lgdsi06ep8zraymppilahj3ry&st=528i77hq&dl=0">Here</a> is my complete CV.</p>
+    </div>
 
-    <h3>Research-related Experience</h3>
-    <ul>
-      <li>2023-Present - Research Assistant, with Dr. M. R. Sharan, Dr. Siddharth George, Dr. Siddharth Hari, and Apurva Bamezai</li>
-      <li>2021-2023 - Research Assistant, IMAGO Global Grassroots with Michael Walton</li>
-      <li>2020-2021 - Research Assistant, J-PAL South Asia with Dr. Seema Jayachandran and Dr. Diva Dhar</li>
-      <li>2019-2021 - Research Assistant, IFMR LEAD</li>
-    </ul>
+    <!-- Education Section -->
+    <div class="section">
+      <h3>Education</h3>
+      <ul>
+        <li>2017-2019 - Master of Arts in Public Policy, Azim Premji University, Bengaluru</li>
+        <li>2014-2017 - Bachelor of Arts in Social Sciences, Tata Institute of Social Sciences</li>
+      </ul>
+    </div>
 
-    <h3>Other Professional Experience</h3>
-    <ul>
-      <li>2018 - Intern, World Resources Institute, Bengaluru</li>
-      <li>2018 - Intern, Centre for the Study of Developing Societies (CSDS) Lokniti, New Delhi</li>
-      <li>2017 - Intern, Centre for Legislative Research and Advocacy (CLRA), New Delhi</li>
-    </ul>
+    <!-- Research-related Experience Section -->
+    <div class="section">
+      <h3>Research-related Experience</h3>
+      <ul>
+        <li>2023-Present - Research Assistant, with Dr. M. R. Sharan, Dr. Siddharth George, Dr. Siddharth Hari, and Apurva Bamezai</li>
+        <li>2021-2023 - Research Assistant, IMAGO Global Grassroots with Michael Walton</li>
+        <li>2020-2021 - Research Assistant, J-PAL South Asia with Dr. Seema Jayachandran and Dr. Diva Dhar</li>
+        <li>2019-2021 - Research Assistant, IFMR LEAD</li>
+      </ul>
+    </div>
 
-    <h3>Conferences and Workshops</h3>
-    <ul>
-      <li>2022 - Lady Shri Ram College, Delhi University, Dr Saroj Gupta Memorial Paper Presentation</li>
-      <li>2022 - Labour Economics Conference, Indian Society of Labour Economics Conference, IIT Roorkee</li>
-      <li>2021 - xSDG UnConference, Dalberg, J-PAL South Asia, Breakthrough India</li>
-    </ul>
+    <!-- Other Professional Experience Section -->
+    <div class="section">
+      <h3>Other Professional Experience</h3>
+      <ul>
+        <li>2018 - Intern, World Resources Institute, Bengaluru</li>
+        <li>2018 - Intern, Centre for the Study of Developing Societies (CSDS) Lokniti, New Delhi</li>
+        <li>2017 - Intern, Centre for Legislative Research and Advocacy (CLRA), New Delhi</li>
+      </ul>
+    </div>
+
+    <!-- Conferences and Workshops Section -->
+    <div class="section">
+      <h3>Conferences and Workshops</h3>
+      <ul>
+        <li>2022 - Lady Shri Ram College, Delhi University, Dr Saroj Gupta Memorial Paper Presentation</li>
+        <li>2022 - Labour Economics Conference, Indian Society of Labour Economics Conference, IIT Roorkee</li>
+        <li>2021 - xSDG UnConference, Dalberg, J-PAL South Asia, Breakthrough India</li>
+      </ul>
+    </div>
+
   </div>
 
+  <!-- jQuery and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- FontAwesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
 </body>
