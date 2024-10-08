@@ -1,0 +1,31 @@
+---
+title: "<center> Research </center>"
+pagetitle: Research
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+<br> 
+
+### Policy Writing
+
+- “Invisible Entrepreneurs: Understanding the market landscape and enterprise readiness for women-led home-based businesses in Tamil Nadu and Rajasthan,” IWWAGE, 2020 [[Link]](https://iwwage.org/wp-content/uploads/2021/01/IWWAGE_LEAD_report.pdf)
+
+- “Business Readiness Scorecard for Women” IWWAGE, 2020 [[Link]](https://iwwage.org/wp-content/uploads/2020/08/business-Readiness-Scorecard.pdf)
+
+- “Women Entrepreneurs as the Powerhouse of Recovery,” LEAD (pg16-20), 2020 [[Link]](https://ifmrlead.org/wp-content/uploads/2020/11/Report_Women-Entrepreneurs-as-Powerhouse-of-Recovery-upd.pdf)
+
+- “Youth Solutions Report”, United Nations Sustainable Development Solutions Network [[Link
+]](https://www.undp.org/sites/g/files/zskgke326/files/publications/UNDP-RBAP-SDSN-joint-report-Youth-Solutions-Report-2020.pdf)
+
+- “Moving the needle from subsistence to growth for home-based businesses,” IWWAGE, [[Link]](https://iwwage.org/moving-the-needle-from-subsistence-to-growth-for-home-based-businesses/)
+
+- “Invisible Entrepreneurs: How to empower women behind their craft”, AVPN blog, 2021 [[Link]](https://avpn.asia/blog/invisible-entrepreneurs-empower-women-behind-craft/)
+
+
+
+<br> 
