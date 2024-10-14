@@ -28,10 +28,10 @@
 
     body {
       font-family: "Computer Modern Sans", sans-serif;
-      font-size: 17px; /* Increased by one unit */
       color: #000000;
       display: block;
       margin: 8px;
+      font-size: 18px;
     }
 
     .main-container {
@@ -44,7 +44,7 @@
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 20px; /* Reduced margin to move "Ria Dutta" higher */
+      margin-top: 30px; /* Adjusted margin */
       font-weight: normal;
     }
 
@@ -53,7 +53,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 25px;
       background-color: #fff;
       border-top: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
@@ -63,24 +63,39 @@
 
     /* Style for individual links */
     .navbar-custom a {
-      color: #de4e69;
-      margin: 0 15px;
+      color: #8b3030;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: normal;
+      text-transform: lowercase;
     }
 
     .navbar-custom a:hover {
-      color: #c43b53;
-      text-decoration: none;
+      color: #8b3030;
+      text-decoration: underline;
+    }
+
+    /* Mobile Toggle */
+    .navbar-toggle {
+      display: none;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 24px;
+      cursor: pointer;
     }
 
     @media (max-width: 768px) {
       .navbar-custom {
+        display: none;
         flex-direction: column;
       }
 
-      .navbar-custom a {
-        margin: 10px 0;
+      .navbar-toggle {
+        display: block;
+      }
+
+      .navbar-custom.active {
+        display: flex;
       }
     }
 
@@ -130,12 +145,14 @@
   <div class="main-container">
     <h1><a href="index.html">Ria Dutta</a></h1>
 
+    <!-- Mobile Menu Toggle -->
+    <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
+
     <!-- Centered Navigation Bar -->
     <nav class="navbar navbar-custom">
-      <a href="index.html">Home</a>
-      <a href="CV.html">CV</a>
-      <a href="research.html">Research</a>
-      <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="index.html">home</a>
+      <a href="CV.html">bio / cv</a>
+      <a href="research.html">research</a>
       <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
       <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
     </nav>
@@ -160,6 +177,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- FontAwesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+  <script>
+    // Toggle navbar for mobile
+    document.querySelector('.navbar-toggle').addEventListener('click', function() {
+      document.querySelector('.navbar-custom').classList.toggle('active');
+    });
+  </script>
 
 </body>
 
