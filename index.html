@@ -33,7 +33,6 @@
       font-size: 18px;
     }
 
-    /* Main container for consistent padding and width */
     .main-container {
       max-width: 800px;
       margin: 0 auto;
@@ -41,17 +40,11 @@
       text-align: left;
     }
 
-    /* Fixed positioning for header */
     h1 {
       font-size: 38px;
       text-align: center;
-      position: fixed;
-      top: 20px; /* Adjust this value to move the header lower */
-      width: 100%;
-      z-index: 1000;
-      background-color: #fff; /* Adding a background color to make it clear */
-      padding: 10px 0;
-      margin: 0;
+      margin-top: 30px; /* Adjust to move header slightly down */
+      margin-bottom: -5px;
       font-weight: normal;
     }
 
@@ -64,21 +57,16 @@
       color: #c43b53;
     }
 
-    /* Fixed navigation bar */
+    /* Custom navbar styles */
     .navbar-custom {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 25px;
-      position: fixed;
-      top: 80px; /* Adjust the top value for correct spacing below the header */
-      width: 100%;
-      z-index: 999;
       background-color: #fff;
       padding: 10px 0;
       font-size: 18px;
-      margin: 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px; /* Reduce space between nav and content */
     }
 
     .navbar-custom a {
@@ -109,13 +97,22 @@
 
     @media (max-width: 768px) {
       .navbar-custom {
+        display: none;
         flex-direction: column;
+      }
+
+      .navbar-toggle {
+        display: block;
+      }
+
+      .navbar-custom.active {
+        display: flex;
       }
     }
 
     /* Content Styling */
     .content {
-      margin-top: 150px; /* Adjust this to account for the fixed header and navbar */
+      margin-top: 50px; /* Adjust spacing to match fixed header */
     }
 
     .content img {
