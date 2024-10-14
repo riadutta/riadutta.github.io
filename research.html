@@ -29,7 +29,7 @@
       display: block;
       margin: 8px;
       font-size: 18px;
-      padding-top: 100px; /* To ensure content doesn't overlap with the fixed navbar */
+      padding-top: 160px; /* Ensures space for the fixed header and navbar */
     }
 
     .main-container {
@@ -43,8 +43,14 @@
       font-size: 38px;
       text-align: center;
       margin-top: 0px;
-      margin-bottom: -5px;
       font-weight: normal;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      z-index: 1000;
+      padding: 10px 0;
     }
 
     h1 a {
@@ -59,7 +65,7 @@
     /* Custom navbar styles */
     .navbar-custom {
       position: fixed;
-      top: 60px; /* Adjusted based on your design */
+      top: 60px; /* Adjusted to sit just below the header */
       left: 0;
       right: 0;
       display: flex;
@@ -69,7 +75,7 @@
       background-color: #fff;
       padding: 10px 0;
       font-size: 18px;
-      z-index: 1000;
+      z-index: 999;
     }
 
     /* Style for individual links */
@@ -159,12 +165,13 @@
 <body>
 
   <div class="main-container">
+    <!-- Fixed Header -->
     <h1><a href="index.html">Ria Dutta</a></h1>
 
     <!-- Mobile Menu Toggle -->
     <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
 
-    <!-- Centered Navigation Bar -->
+    <!-- Fixed Centered Navigation Bar -->
     <nav class="navbar navbar-custom">
       <a href="index.html">Home</a>
       <a href="CV.html">CV</a>
@@ -173,6 +180,7 @@
       <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
     </nav>
 
+    <!-- Content Section -->
     <div id="policy-reports" class="section level3 policy-reports">
       <h3>Policy Reports</h3>
       <ul>
