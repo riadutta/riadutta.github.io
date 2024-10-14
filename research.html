@@ -29,7 +29,6 @@
       display: block;
       margin: 8px;
       font-size: 18px;
-      padding-top: 180px; /* Increased space for fixed header and navbar */
     }
 
     .main-container {
@@ -42,15 +41,9 @@
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 0px;
+      margin-top: 20px; /* Adjusted to move header slightly down */
+      margin-bottom: 0px; /* Reduce space between Ria Dutta and navigation bar */
       font-weight: normal;
-      position: fixed;
-      top: 20px; /* Moved 20px below the top of the page */
-      left: 0;
-      right: 0;
-      background-color: white;
-      z-index: 1000;
-      padding: 10px 0;
     }
 
     h1 a {
@@ -64,10 +57,6 @@
 
     /* Custom navbar styles */
     .navbar-custom {
-      position: fixed;
-      top: 90px; /* Adjusted to sit below the header */
-      left: 0;
-      right: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -75,7 +64,7 @@
       background-color: #fff;
       padding: 10px 0;
       font-size: 18px;
-      z-index: 999;
+      margin-bottom: 10px; /* Reduced space between navigation bar and content */
     }
 
     /* Style for individual links */
@@ -121,7 +110,7 @@
     }
 
     .section {
-      margin-top: 30px;
+      margin-top: 20px; /* Reduced margin between navigation bar and content */
     }
 
     .section h3 {
@@ -159,19 +148,17 @@
       margin-bottom: 20px;
     }
   </style>
-
 </head>
 
 <body>
 
   <div class="main-container">
-    <!-- Fixed Header -->
     <h1><a href="index.html">Ria Dutta</a></h1>
 
     <!-- Mobile Menu Toggle -->
     <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
 
-    <!-- Fixed Centered Navigation Bar -->
+    <!-- Centered Navigation Bar -->
     <nav class="navbar navbar-custom">
       <a href="index.html">Home</a>
       <a href="CV.html">CV</a>
@@ -180,7 +167,6 @@
       <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
     </nav>
 
-    <!-- Content Section -->
     <div id="policy-reports" class="section level3 policy-reports">
       <h3>Policy Reports</h3>
       <ul>
