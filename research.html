@@ -29,6 +29,7 @@
       display: block;
       margin: 8px;
       font-size: 18px;
+      padding-top: 60px; /* Padding to ensure the fixed navbar doesn't overlap content */
     }
 
     .main-container {
@@ -41,8 +42,8 @@
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 0px;
-      margin-bottom: -5px; /* Further reduced space between Ria Dutta and nav */
+      margin-top: 10px;
+      margin-bottom: -5px;
       font-weight: normal;
     }
 
@@ -57,6 +58,10 @@
 
     /* Custom navbar styles */
     .navbar-custom {
+      position: fixed; /* Fixed navbar */
+      top: 0;
+      width: 100%; /* Span across the full width of the page */
+      z-index: 1000; /* Make sure it's above content */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -64,7 +69,7 @@
       background-color: #fff;
       padding: 10px 0;
       font-size: 18px;
-      margin-bottom: 40px;
+      border-bottom: 1px solid #ddd;
     }
 
     /* Style for individual links */
