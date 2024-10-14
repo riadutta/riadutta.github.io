@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPCM1RC0P8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-HPCM1RC0P8');
   </script>
@@ -15,60 +15,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ria Dutta</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap and FontAwesome CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- FontAwesome Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
   <style>
+    @font-face {
+      font-family: "Computer Modern Sans";
+      src: url('https://riadutta.github.io/fonts/cmunss.otf') format('opentype');
+    }
+
+    body {
+      font-family: "Computer Modern Sans", sans-serif;
+      color: #000000;
+      display: block;
+      margin: 8px;
+      font-size: 18px;
+    }
+
+    .main-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+    }
+
     /* Center name at the top */
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 0px;
+      margin-bottom: -5px;
       font-weight: normal;
+      color: #22527c;
     }
 
-    /* Custom navbar styles for center alignment */
+    h1 a {
+      color: #22527c;
+      text-decoration: none;
+    }
+
+    h1 a:hover {
+      color: #c43b53;
+    }
+
+    /* Custom navbar styles */
     .navbar-custom {
       display: flex;
       justify-content: center;
+      align-items: center;
+      gap: 25px;
       background-color: #fff;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
       padding: 10px 0;
-      font-size: 16px;
+      font-size: 18px;
     }
 
-    /* Style for individual links */
     .navbar-custom a {
-      color: #333;
-      margin: 0 15px;
+      color: #8b3030;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: normal;
+      font-size: 20px;
     }
 
-    /* Hover effect for links */
     .navbar-custom a:hover {
-      color: #007bff;
-      text-decoration: none;
+      color: #8b3030;
+      text-decoration: underline;
     }
 
-    /* Icons inside the links */
-    .navbar-custom .fa {
-      margin-right: 5px;
+    .navbar-custom .fab {
+      font-size: 24px;
     }
 
-    /* Adjust navbar for mobile responsiveness */
+    /* Mobile Toggle */
+    .navbar-toggle {
+      display: none;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
     @media (max-width: 768px) {
       .navbar-custom {
+        display: none;
         flex-direction: column;
       }
 
-      .navbar-custom a {
-        margin: 10px 0;
+      .navbar-toggle {
+        display: block;
+      }
+
+      .navbar-custom.active {
+        display: flex;
       }
     }
+
+    /* Content Styling */
+    .content {
+      margin-top: 20px;
+    }
+
+    .content img {
+      float: left;
+      margin: 0px 25px 15px 0px;
+      width: 40%;
+    }
+
+    .content p {
+      line-height: 1.8;
+    }
+
+    a {
+      color: #de4e69;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
   </style>
 
 </head>
@@ -76,38 +141,29 @@
 <body>
 
   <!-- Name at the top -->
-  <h1>Ria Dutta</h1>
+  <h1><a href="index.html">Ria Dutta</a></h1>
+
+  <!-- Mobile Menu Toggle -->
+  <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
 
   <!-- Centered Navigation Bar -->
   <nav class="navbar navbar-custom">
     <a href="index.html">Home</a>
     <a href="CV.html">CV</a>
     <a href="research.html">Research</a>
-    <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
     <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
     <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
   </nav>
 
-  <div class="container">
-    <img src="images/ria_shot.jpeg" style="float:left; margin: 0px 25px 15px 0px; width:40%;" alt="Ria Dutta Portrait" />
-    <p>I am currently researching peer learning among locally elected politicians 
-      in Bihar working with Dr. MR Sharan, Dr. Siddharth George, Dr. Siddharth Hari 
-      and Apurva Bamezai. Previously, I worked with Michael Walton as a 
-      Senior Research Associate at IMAGO Global Grassroots on rural 
-      governance projects that involve analyzing novel datasets.</p>
-    <p>Before that, I worked as a Research Associate at J-PAL South Asia, 
-      working with Dr. Seema Jayachandran and Dr. Diva Dhar on a 
-      gender-transformative education program in India. 
-      At IFMR-LEAD, I worked on projects related to
-      labor markets, gender inequality and entrepreneurship.</p>
-    <p>I am interested in topics related to Development, 
-      Economic History, Political Economy, and Deep Learning.</p>
-    <p>I have a Master’s degree in Public Policy from Azim Premji University and a 
-      Bachelor’s degree in Social Sciences from Tata Institute of Social Sciences.</p>
+  <!-- Content Section -->
+  <div class="main-container content">
+    <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" />
+    <p>I am currently researching peer learning among locally elected politicians in Bihar, working with Dr. MR Sharan, Dr. Siddharth George, Dr. Siddharth Hari, and Apurva Bamezai. Previously, I worked with Michael Walton as a Senior Research Associate at IMAGO Global Grassroots on rural governance projects that involve analyzing novel datasets.</p>
+    <p>Before that, I worked as a Research Associate at J-PAL South Asia, working with Dr. Seema Jayachandran and Dr. Diva Dhar on a gender-transformative education program in India. At IFMR-LEAD, I worked on projects related to labor markets, gender inequality, and entrepreneurship.</p>
+    <p>I am interested in topics related to Development, Economic History, Political Economy, and Deep Learning.</p>
+    <p>I have a Master’s degree in Public Policy from Azim Premji University and a Bachelor’s degree in Social Sciences from Tata Institute of Social Sciences.</p>
     <p>I am skilled in the use of Python, R, and Stata for data analysis.</p> 
-    <p>I am also the Director at <a href="https://www.womenineconpolicy.com/"> 
-      Women in Economics and Policy</a>, a non-profit to solve the 
-      systemic gender diversity problem in Economics and allied fields.</p>
+    <p>I am also the Director at <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a>, a non-profit to solve the systemic gender diversity problem in Economics and allied fields.</p>
   </div>
 
   <!-- jQuery -->
@@ -116,6 +172,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- FontAwesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+  <script>
+    // Toggle navbar for mobile
+    document.querySelector('.navbar-toggle').addEventListener('click', function() {
+      document.querySelector('.navbar-custom').classList.toggle('active');
+    });
+  </script>
 
 </body>
 
