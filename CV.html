@@ -19,70 +19,104 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
+  <!-- Custom Font using @font-face for Computer Modern Sans from GitHub -->
   <style>
-    /* Main container to center align the content */
-    .main-container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
+    @font-face {
+      font-family: "Computer Modern Sans";
+      src: url('https://riadutta.github.io/fonts/cmunss.otf') format('opentype');
     }
 
-    /* Center name at the top */
+    body {
+      font-family: "Computer Modern Sans", sans-serif;
+      color: #000000;
+      display: block;
+      margin: 8px;
+      font-size: 18px;
+    }
+
+    .main-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+    }
+
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 0px;
+      margin-bottom: -5px;
       font-weight: normal;
     }
 
-    /* Custom navbar styles to center align */
+    h1 a {
+      color: #22527c;
+      text-decoration: none;
+    }
+
+    h1 a:hover {
+      color: #c43b53;
+    }
+
+    /* Custom navbar styles */
     .navbar-custom {
       display: flex;
       justify-content: center;
+      align-items: center;
+      gap: 25px;
       background-color: #fff;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
       padding: 10px 0;
-      font-size: 16px;
+      font-size: 18px;
     }
 
-    /* Style for individual links */
     .navbar-custom a {
-      color: #333;
-      margin: 0 15px;
+      color: #8b3030;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: normal;
+      font-size: 20px;
     }
 
-    /* Hover effect for links */
     .navbar-custom a:hover {
-      color: #007bff;
-      text-decoration: none;
+      color: #8b3030;
+      text-decoration: underline;
     }
 
-    /* Icons inside the links */
-    .navbar-custom .fa {
-      margin-right: 5px;
+    .navbar-custom .fab {
+      font-size: 24px;
     }
 
-    /* Adjust navbar for mobile responsiveness */
+    /* Mobile Toggle */
+    .navbar-toggle {
+      display: none;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
     @media (max-width: 768px) {
       .navbar-custom {
+        display: none;
         flex-direction: column;
       }
 
-      .navbar-custom a {
-        margin: 10px 0;
+      .navbar-toggle {
+        display: block;
+      }
+
+      .navbar-custom.active {
+        display: flex;
       }
     }
 
-    /* Styling for the content sections */
     .section {
       margin-top: 30px;
     }
 
     .section h2, .section h3 {
-      text-align: left;
+      font-size: 24px;
+      font-weight: bold;
       margin-bottom: 20px;
     }
 
@@ -96,9 +130,8 @@
       line-height: 1.6;
     }
 
-    /* Hyperlink styling */
     a {
-      color: #007bff;
+      color: #de4e69;
     }
 
     a:hover {
@@ -112,24 +145,18 @@
 
   <div class="main-container">
 
-    <!-- Name at the top -->
-    <h1>Ria Dutta</h1>
+    <h1><a href="index.html">Ria Dutta</a></h1>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
 
     <!-- Centered Navigation Bar -->
     <nav class="navbar navbar-custom">
       <a href="index.html">Home</a>
-      <a href="CV.html">CV</a>
       <a href="research.html">Research</a>
-      <a href="mailto:28.riad@gmail.com"><i class="fas fa-envelope"></i></a>
       <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
       <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
     </nav>
-
-    <!-- CV Content Section -->
-    <div class="section">
-      <h2>CV</h2>
-      <p><a href="https://www.dropbox.com/scl/fi/imm6u0kllyl7wskys316l/Dutta_Ria_CV.pdf?rlkey=lgdsi06ep8zraymppilahj3ry&st=528i77hq&dl=0">Here</a> is my complete CV.</p>
-    </div>
 
     <!-- Education Section -->
     <div class="section">
@@ -176,7 +203,6 @@
   <!-- jQuery and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <!-- FontAwesome -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
 </body>
