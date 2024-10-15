@@ -31,17 +31,13 @@
       color: #000000;
       margin: 8px;
       font-size: 18px;
-      height: 100vh; /* Full height for Flexbox centering */
-      display: flex;
-      align-items: center; /* Center vertically */
-      justify-content: center; /* Center horizontally */
     }
 
     .main-container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      text-align: center; /* Center the text under the image */
+      text-align: center; /* Center align all content */
     }
 
     h1 {
@@ -117,21 +113,29 @@
     /* Content Styling */
     .content {
       margin-top: 50px;
-      display: flex;
-      flex-direction: column; /* Ensures image and text are stacked */
-      align-items: center; /* Center align horizontally */
-      justify-content: center; /* Center align vertically */
-      height: 100%;
+      text-align: center; /* Ensure the content is center-aligned */
     }
 
     .content img {
-      margin: 0 auto;
-      width: 60%;
+      margin: 0 auto 15px; /* Center the image and add bottom margin */
+      width: 45%;
       display: block;
     }
 
+    /* Adjust image size and center for smaller screens */
+    @media (max-width: 768px) {
+      .content img {
+        width: 60%;
+        margin: 0 auto 15px;
+        display: block;
+      }
+
+      .content p {
+        text-align: left;
+      }
+    }
+
     .content p {
-      text-align: center;
       line-height: 1.8;
       margin-left: 0;
     }
