@@ -31,13 +31,17 @@
       color: #000000;
       margin: 8px;
       font-size: 18px;
+      height: 100vh; /* Full height for Flexbox centering */
+      display: flex;
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
     }
 
     .main-container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      text-align: left;
+      text-align: center; /* Center the text under the image */
     }
 
     h1 {
@@ -113,29 +117,21 @@
     /* Content Styling */
     .content {
       margin-top: 50px;
+      display: flex;
+      flex-direction: column; /* Ensures image and text are stacked */
+      align-items: center; /* Center align horizontally */
+      justify-content: center; /* Center align vertically */
+      height: 100%;
     }
 
     .content img {
-      float: left;
-      margin: 0px 25px 15px 0px;
-      width: 45%;
-    }
-
-    /* Adjust image size and center on smaller screens */
-    @media (max-width: 768px) {
-      .content img {
-        width: 60%; /* Adjusts the width to fit on mobile devices */
-        margin: 0 auto; /* Centers the image */
-        display: block; /* Ensures the image is displayed as a block */
-      }
-
-      .content p {
-        clear: both; /* Ensures text comes below the image */
-        text-align: left; /* Left-aligns the text */
-      }
+      margin: 0 auto;
+      width: 60%;
+      display: block;
     }
 
     .content p {
+      text-align: center;
       line-height: 1.8;
       margin-left: 0;
     }
