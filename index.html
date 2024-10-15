@@ -43,7 +43,7 @@
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 30px; /* Adjust to move header slightly down */
+      margin-top: 30px;
       margin-bottom: -5px;
       font-weight: normal;
     }
@@ -66,7 +66,7 @@
       background-color: #fff;
       padding: 10px 0;
       font-size: 18px;
-      margin-bottom: 20px; /* Reduce space between nav and content */
+      margin-bottom: 20px;
     }
 
     .navbar-custom a {
@@ -108,52 +108,35 @@
       .navbar-custom.active {
         display: flex;
       }
-
-      /* Ensure image is centered and text is below */
-      .content img {
-        float: none; /* Remove float */
-        width: 80%; /* Adjust image width for mobile */
-        margin: 0 auto 15px; /* Center the image and add bottom margin */
-        display: block;
-      }
-
-      .content p {
-        margin-left: 10px; /* Reduced left margin for better alignment */
-        margin-right: 10px; /* Reduced right margin for better alignment */
-        text-align: left; /* Ensure text is left-aligned */
-      }
     }
 
     /* Content Styling */
     .content {
-      margin-top: 50px; /* Adjust spacing to match fixed header */
+      margin-top: 50px;
     }
 
     .content img {
       float: left;
       margin: 0px 25px 15px 0px;
-      width: 45%; /* Original image size */
+      width: 45%;
     }
 
-    /* Adjust image size for smaller screens */
+    /* Adjust image size and clear float for smaller screens */
     @media (max-width: 768px) {
       .content img {
-        width: 80%; /* Make the image larger on mobile */
-        margin: 0 auto 15px; /* Center the image and adjust margin */
+        width: 60%;
+        margin: 0 auto 15px;
         display: block;
-        float: none; /* Ensure no floating */
       }
 
       .content p {
-        margin-left: 10px; /* Reduced left margin for better alignment */
-        margin-right: 10px; /* Reduced right margin for better alignment */
-        text-align: left; /* Ensure text is left-aligned */
+        clear: both; /* Ensures text comes below the image */
       }
     }
 
     .content p {
       line-height: 1.8;
-      margin-left: 0; /* Ensure text aligns perfectly on all lines */
+      margin-left: 0;
     }
 
     a {
@@ -170,31 +153,29 @@
 
 <body>
 
-  <div class="main-container">
-    <h1><a href="index.html">Ria Dutta</a></h1>
+  <!-- Name at the top -->
+  <h1><a href="index.html">Ria Dutta</a></h1>
 
-    <!-- Mobile Menu Toggle -->
-    <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
+  <!-- Mobile Menu Toggle -->
+  <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
 
-    <!-- Centered Navigation Bar -->
-    <nav class="navbar navbar-custom">
-      <a href="index.html">Home</a>
-      <a href="CV.html">CV</a>
-      <a href="research.html">Research</a>
-      <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
-      <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
-    </nav>
+  <!-- Centered Navigation Bar -->
+  <nav class="navbar navbar-custom">
+    <a href="index.html">Home</a>
+    <a href="CV.html">CV</a>
+    <a href="research.html">Research</a>
+    <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
+    <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
+  </nav>
 
-    <!-- Content Section -->
-    <div class="main-container content">
-      <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" />
-      <p>I am researching the impact of peer networks on locally elected politicians with Professor MR Sharan.</p>
-      <p>Previously, I have worked at IMAGO Global Grassroots, J-PAL SouthAsia, and IFMR LEAD.</p>
-      <p>My research is in Development Economics, Economic History, and Political Economy.</p>
-      <p>I am proficient in Stata, R, and Python for analysis.</p>
-      <p>I am also the Director at <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a>, an India-based non-profit.</p>
-    </div>
-
+  <!-- Content Section -->
+  <div class="main-container content">
+    <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" />
+    <p>I am researching the impact of peer networks on locally elected politicians with Professor MR Sharan.</p>
+    <p>Previously, I have worked at IMAGO Global Grassroots, J-PAL SouthAsia, and IFMR LEAD.</p>
+    <p>My research is in Development Economics, Economic History, and Political Economy.</p>
+    <p>I am proficient in Stata, R, and Python for analysis.</p>
+    <p>I am also the Director at <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a>, an India-based non-profit.</p>
   </div>
 
   <!-- jQuery -->
