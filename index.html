@@ -43,7 +43,7 @@
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 30px; /* Adjust to move header slightly down */
+      margin-top: 30px;
       margin-bottom: -5px;
       font-weight: normal;
     }
@@ -66,7 +66,7 @@
       background-color: #fff;
       padding: 10px 0;
       font-size: 18px;
-      margin-bottom: 20px; /* Reduce space between nav and content */
+      margin-bottom: 20px;
     }
 
     .navbar-custom a {
@@ -112,7 +112,7 @@
 
     /* Content Styling */
     .content {
-      margin-top: 50px; /* Adjust spacing to match fixed header */
+      margin-top: 50px;
     }
 
     .content img {
@@ -121,18 +121,22 @@
       width: 45%;
     }
 
-    /* Adjust image size for smaller screens */
+    /* Adjust image size and clear float for smaller screens */
     @media (max-width: 768px) {
       .content img {
-        width: 80%; /* Make the image take full width on smaller devices */
-        margin: 0 auto 15px; /* Center the image and adjust margin */
+        width: 80%;
+        margin: 0 auto 15px;
         display: block;
+      }
+
+      .content p {
+        clear: both; /* Ensures text comes below the image */
       }
     }
 
     .content p {
       line-height: 1.8;
-      margin-left: 0; /* Ensure text aligns perfectly on all lines */
+      margin-left: 0;
     }
 
     a {
