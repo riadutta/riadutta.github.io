@@ -31,14 +31,12 @@
       color: #000000;
       margin: 8px;
       font-size: 18px;
-      text-align: center;
     }
 
     .main-container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
-      text-align: center;
     }
 
     h1 {
@@ -58,16 +56,15 @@
       color: #c43b53;
     }
 
-    /* Custom navbar styles */
     .navbar-custom {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 25px;
       background-color: #fff;
-      padding: 5px 0;
+      padding: 10px 0;
       font-size: 18px;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
     }
 
     .navbar-custom a {
@@ -110,28 +107,55 @@
       }
     }
 
-    /* Content Styling */
     .content {
       margin-top: 50px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      flex-direction: column;
     }
 
-    .profile-pic {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      margin-bottom: 15px;
+    .content img {
+      float: left;
+      width: 45%; /* Make image bigger */
+      margin-right: 25px; /* Add space between image and text */
+    }
+
+    /* For larger screens - Image on the left and text on the right */
+    @media (min-width: 769px) {
+      .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .content img {
+        width: 50%; /* Increase size for larger screens */
+        display: block;
+      }
+    }
+
+    /* Ensure the image and text are stacked in mobile view */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .content img {
+        width: 80%; /* Keep image responsive on smaller screens */
+        margin: 0 auto 15px; /* Center the image and adjust margin */
+        display: block;
+      }
+
+      .content p {
+        text-align: left;
+      }
     }
 
     .content p {
       line-height: 1.8;
-      text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
+      margin-left: 0;
     }
 
     a {
@@ -165,12 +189,14 @@
 
   <!-- Content Section -->
   <div class="main-container content">
-    <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" class="profile-pic" />
-    <p>I am researching the impact of peer networks on locally elected politicians with Professor MR Sharan.</p>
-    <p>Previously, I have worked at IMAGO Global Grassroots, J-PAL SouthAsia, and IFMR LEAD.</p>
-    <p>My research is in Development Economics, Economic History, and Political Economy.</p>
-    <p>I am proficient in Stata, R, and Python for analysis.</p>
-    <p>I am also the Director at <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a>, an India-based non-profit.</p>
+    <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" />
+    <div>
+      <p>I am researching the impact of peer networks on locally elected politicians with Professor MR Sharan.</p>
+      <p>Previously, I have worked at IMAGO Global Grassroots, J-PAL SouthAsia, and IFMR LEAD.</p>
+      <p>My research is in Development Economics, Economic History, and Political Economy.</p>
+      <p>I am proficient in Stata, R, and Python for analysis.</p>
+      <p>I am also the Director at <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a>, an India-based non-profit.</p>
+    </div>
   </div>
 
   <!-- jQuery -->
