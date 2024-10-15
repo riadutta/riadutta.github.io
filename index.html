@@ -37,14 +37,14 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      text-align: left;
+      text-align: center;
     }
 
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 30px; /* Adjust to move header slightly down */
-      margin-bottom: -5px;
+      margin-top: 10px; /* Adjusted to move header slightly higher */
+      margin-bottom: -5px; /* Reduce space between Ria Dutta and navigation bar */
       font-weight: normal;
     }
 
@@ -64,11 +64,12 @@
       align-items: center;
       gap: 25px;
       background-color: #fff;
-      padding: 10px 0;
+      padding: 5px 0; /* Reduced padding to bring navbar higher */
       font-size: 18px;
-      margin-bottom: 20px; /* Reduce space between nav and content */
+      margin-bottom: 5px; /* Further reduce space between nav and content */
     }
 
+    /* Style for individual links */
     .navbar-custom a {
       color: #8b3030;
       text-decoration: none;
@@ -110,19 +111,25 @@
       }
     }
 
-    /* Content Styling */
     .content {
-      margin-top: 50px; /* Adjust spacing to match fixed header */
+      margin-top: 15px; /* Reduced margin between navigation bar and content */
     }
 
     .content img {
-      float: left;
-      margin: 0px 25px 15px 0px;
-      width: 40%;
+      width: 60%; /* Keep the image smaller */
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .content img {
+        width: 100%; /* Full width for mobile */
+      }
     }
 
     .content p {
-      line-height: 1.8;
+      text-align: left; /* Ensure all text is left-aligned */
+      margin-left: 50px; /* Reduced the left margin */
+      margin-right: 50px; /* Ensure margin balance */
     }
 
     a {
@@ -132,36 +139,37 @@
     a:hover {
       text-decoration: none;
     }
-
   </style>
 
 </head>
 
 <body>
 
-  <!-- Name at the top -->
-  <h1><a href="index.html">Ria Dutta</a></h1>
+  <div class="main-container">
+    <h1><a href="index.html">Ria Dutta</a></h1>
 
-  <!-- Mobile Menu Toggle -->
-  <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
+    <!-- Mobile Menu Toggle -->
+    <div class="navbar-toggle"><i class="fas fa-bars"></i></div>
 
-  <!-- Centered Navigation Bar -->
-  <nav class="navbar navbar-custom">
-    <a href="index.html">Home</a>
-    <a href="CV.html">CV</a>
-    <a href="research.html">Research</a>
-    <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
-    <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
-  </nav>
+    <!-- Centered Navigation Bar -->
+    <nav class="navbar navbar-custom">
+      <a href="index.html">Home</a>
+      <a href="CV.html">CV</a>
+      <a href="research.html">Research</a>
+      <a href="http://github.com/riadutta/"><i class="fab fa-github"></i></a>
+      <a href="https://x.com/ria__dutta"><i class="fab fa-twitter"></i></a>
+    </nav>
 
-  <!-- Content Section -->
-  <div class="main-container content">
-    <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" />
-    <p>I am researching the impact of peer networks on locally elected politicians with Professor MR Sharan.</p>
-    <p>Previously, I have worked at IMAGO Global Grassroots, J-PAL SouthAsia, and IFMR LEAD.</p>
-    <p>My research is in Development, Economic History, and Political Economy.</p>
-    <p>I am proficient in Stata, R, and Python for analysis.</p>
-    <p>I am also the Director at <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a>, an India-based non-profit.</p>
+    <!-- Content Section -->
+    <div class="main-container content">
+      <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" />
+      <p>I am researching the impact of peer networks on locally elected politicians with Professor MR Sharan.</p>
+      <p>Previously, I have worked at IMAGO Global Grassroots, J-PAL SouthAsia, and IFMR LEAD.</p>
+      <p>My research is in Development Economics, Economic History, and Political Economy.</p>
+      <p>I am proficient in Stata, R, and Python for analysis.</p>
+      <p>I am also the Director at <a href="https://www.womenineconpolicy.com/">Women in Economics and Policy</a>, an India-based non-profit.</p>
+    </div>
+
   </div>
 
   <!-- jQuery -->
