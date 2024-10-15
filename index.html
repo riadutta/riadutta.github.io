@@ -121,17 +121,17 @@
       width: 45%;
     }
 
-    /* Adjust image size and clear float for smaller screens */
+    /* Adjust image size and center on smaller screens */
     @media (max-width: 768px) {
       .content img {
-        width: 60%; /* Ensure image width stays within screen limits */
-        margin: 0 auto 15px;
-        display: block;
+        width: 60%; /* Adjusts the width to fit on mobile devices */
+        margin: 0 auto; /* Centers the image */
+        display: block; /* Ensures the image is displayed as a block */
       }
 
       .content p {
-        clear: both; /* Ensure text comes below the image */
-        text-align: left;
+        clear: both; /* Ensures text comes below the image */
+        text-align: left; /* Left-aligns the text */
       }
     }
 
