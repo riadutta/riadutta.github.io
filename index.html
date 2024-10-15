@@ -31,19 +31,20 @@
       color: #000000;
       margin: 8px;
       font-size: 18px;
+      text-align: center;
     }
 
     .main-container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      text-align: left;
+      text-align: center;
     }
 
     h1 {
       font-size: 38px;
       text-align: center;
-      margin-top: 30px;
+      margin-top: 10px;
       margin-bottom: -5px;
       font-weight: normal;
     }
@@ -64,9 +65,9 @@
       align-items: center;
       gap: 25px;
       background-color: #fff;
-      padding: 10px 0;
+      padding: 5px 0;
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
 
     .navbar-custom a {
@@ -85,7 +86,6 @@
       font-size: 24px;
     }
 
-    /* Mobile Toggle */
     .navbar-toggle {
       display: none;
       position: absolute;
@@ -113,31 +113,25 @@
     /* Content Styling */
     .content {
       margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
 
-    .content img {
-      float: left;
-      margin: 0px 25px 15px 0px;
-      width: 45%;
-    }
-
-    /* Adjust image size and clear float for smaller screens */
-    @media (max-width: 768px) {
-      .content img {
-        width: 60%; /* Ensure image width stays within screen limits */
-        margin: 0 auto 15px;
-        display: block;
-      }
-
-      .content p {
-        clear: both; /* Ensure text comes below the image */
-        text-align: left;
-      }
+    .profile-pic {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
 
     .content p {
       line-height: 1.8;
-      margin-left: 0;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     a {
@@ -171,8 +165,8 @@
 
   <!-- Content Section -->
   <div class="main-container content">
-    <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" />
-    <p>I am researching the impact of peer networks on locally elected politicians with Prof MR Sharan.</p>
+    <img src="images/ria_shot.jpeg" alt="Ria Dutta Portrait" class="profile-pic" />
+    <p>I am researching the impact of peer networks on locally elected politicians with Professor MR Sharan.</p>
     <p>Previously, I have worked at IMAGO Global Grassroots, J-PAL SouthAsia, and IFMR LEAD.</p>
     <p>My research is in Development Economics, Economic History, and Political Economy.</p>
     <p>I am proficient in Stata, R, and Python for analysis.</p>
