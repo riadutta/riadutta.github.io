@@ -1,0 +1,100 @@
+body {
+  font-family: "Computer Modern Sans", sans-serif;
+  color: #000000;
+  margin: 8px;
+  font-size: 18px;
+}
+
+.main-container {
+  max-width: 1000px; /* Ensures a consistent width */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 38px;
+  text-align: center;
+  margin-top: 30px; /* Adjust the margin as needed */
+  margin-bottom: -5px;
+  font-weight: normal;
+}
+
+h1 a {
+  color: #22527c;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #c43b53;
+}
+
+.navbar-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background-color: #fff;
+  padding: 10px 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.navbar-custom a {
+  color: #8b3030;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.navbar-custom a:hover {
+  color: #8b3030;
+  text-decoration: underline;
+}
+
+.navbar-custom .fab {
+  font-size: 24px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .navbar-custom {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-custom.active {
+    display: flex;
+  }
+}
+
+/* Content Styling */
+.content {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.content img {
+  float: left;
+  width: 45%; /* Keep image size consistent */
+  margin-right: 25px; 
+  border-radius: 50%;
+}
+
+/* Larger Screens */
+@media (min-width: 769px) {
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .content img {
+    width: 40%;
+  }
+}
