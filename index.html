@@ -168,35 +168,43 @@
       text-decoration: none;
     }
 
-    /* Style for name under image */
-    .name-section {
+    /* Skills Section */
+    .skills-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .skills-container h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
       text-align: center;
-      font-size: 28px;
-      margin-top: 10px;
-      font-weight: bold;
     }
 
-    /* Interests Section */
-    .interests {
-      margin-top: 40px;
+    .skills-grid {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
 
-    .interests h2 {
-      font-size: 24px;
-      font-weight: bold;
+    .skill-item {
       text-align: center;
-      margin-bottom: 20px;
     }
 
-    .interests ul {
-      list-style-type: none;
-      text-align: center;
-      font-size: 18px;
-      padding: 0;
+    .skill-item img {
+      width: 80px;
+      margin-bottom: 15px;
     }
 
-    .interests ul li {
-      margin-bottom: 10px;
+    .skill-item h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .skill-item p {
+      margin-top: 5px;
+      font-size: 16px;
+      color: #666;
     }
 
   </style>
@@ -254,18 +262,31 @@
   </div>
 </div>
 
-<!-- Name under Image -->
-<div class="name-section">Ria Dutta</div>
+<!-- Statistical Skills Section -->
+<div class="skills-container">
+  <h2>Statistical Skills</h2>
+  <div class="skills-grid">
+    <!-- Python -->
+    <div class="skill-item">
+      <img src="path-to-python-logo.png" alt="Python Logo">
+      <h3>Python</h3>
+      <p>Expert</p>
+    </div>
 
-<!-- Interests Section -->
-<div class="interests">
-  <h2>Interests</h2>
-  <ul>
-    <li>Development Economics</li>
-    <li>Political Economy</li>
-    <li>Economic History</li>
-    <li>Data Science</li>
-  </ul>
+    <!-- Stata -->
+    <div class="skill-item">
+      <img src="path-to-stata-logo.png" alt="Stata Logo">
+      <h3>Stata</h3>
+      <p>Proficient</p>
+    </div>
+
+    <!-- R -->
+    <div class="skill-item">
+      <img src="path-to-r-logo.png" alt="R Logo">
+      <h3>R</h3>
+      <p>Intermediate</p>
+    </div>
+  </div>
 </div>
 
   <!-- jQuery -->
