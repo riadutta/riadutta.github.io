@@ -115,17 +115,17 @@
     }
 
     .content img {
-      float: right; /* Move image to the right */
-      width: 45%; /* Keep image size */
-      margin-left: 25px; /* Add space between image and text */
-      border-radius: 50%; /* Keep the image circular */
+      float: left;
+      width: 45%; /* Make image bigger */
+      margin-right: 25px; /* Add space between image and text */
+      border-radius: 50%; /* Make the image circular */
     }
 
-    /* For larger screens - Image on the right and text on the left */
+    /* For larger screens - Image on the left and text on the right */
     @media (min-width: 769px) {
       .content {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: flex-start;
         text-align: left;
       }
