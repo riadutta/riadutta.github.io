@@ -114,11 +114,10 @@
       align-items: center;
     }
 
-    /* Move the image to the right */
     .content img {
-      float: right; /* Change float to right */
-      width: 45%; /* Keep the image size */
-      margin-left: 25px; /* Add space between text and image */
+      float: right; /* Move image to the right */
+      width: 45%; /* Keep image size */
+      margin-left: 25px; /* Add space between image and text */
       border-radius: 50%; /* Keep the image circular */
     }
 
@@ -126,7 +125,7 @@
     @media (min-width: 769px) {
       .content {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: flex-start;
         text-align: left;
       }
