@@ -24,18 +24,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Research Experience
 
-- 2023-Present - Research Assistant, with Dr. M. R. Sharan, Dr. Siddharth George, Dr. Siddharth Hari and Apurva Bamezai
+- 2023-Present - Research Assistant, University of Maryland with Prof M. R. Sharan
 
-- 2021-2023 - Research Assistant, IMAGO Global Grassroots with Michael Walton
+- 2021-2023 - Research Assistant, IMAGO Global Grassroots with Prof Michael Walton
 
-- 2020-2021 - Research Assistant, J-PAL South Asia with Dr.Seema Jayachandran and Dr. Diva Dhar
+- 2020-2021 - Research Assistant, J-PAL South Asia with Prof Seema Jayachandran and Dr. Diva Dhar
 
 - 2019-2021 - Research Assistant, IFMR-LEAD  
 
 
 <br>
 
-### Other Professional Exeperience
+### Other Professional Experience
 
 - 2018 - Intern, World Resources Institute, Bengaluru 
 
