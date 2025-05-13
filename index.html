@@ -1,87 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#publications">PUBLICATIONS</a></li>
-                <li><a href="#working-papers">WORKING PAPERS</a></li>
-                <li><a href="#work-in-progress">WORK IN PROGRESS</a></li>
-                <li><a href="#policy">POLICY</a></li>
-            </ul>
-        </nav>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main>
-        <section id="about" class="hero">
-            <h1>YOUR NAME</h1>
-            <div class="about-content">
-                <p>I am an Assistant Professor in [Department] at [University]. My research focuses on [your research areas].</p>
-                <div class="contact-links">
-                    <a href="#" class="contact-link"><i class="fas fa-file-alt"></i> CV</a>
-                    <a href="#" class="contact-link"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="#" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="#" class="contact-link"><i class="fas fa-calendar"></i> Calendar</a>
-                </div>
-            </div>
-        </section>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="publication">
-                <h3>Title of Your Publication</h3>
-                <p class="journal">Journal Name (Year)</p>
-                <p class="abstract">Abstract of your publication goes here...</p>
-                <div class="publication-links">
-                    <a href="#" class="pdf-link">PDF</a>
-                    <a href="#" class="abstract-link">Abstract</a>
-                </div>
-            </div>
-        </section>
+header {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+}
 
-        <section id="working-papers">
-            <h2>Working Papers</h2>
-            <div class="working-paper">
-                <h3>Title of Working Paper</h3>
-                <p class="status">[Status, e.g., "Under Review"]</p>
-                <p class="abstract">Abstract of your working paper goes here...</p>
-                <div class="paper-links">
-                    <a href="#" class="pdf-link">PDF</a>
-                </div>
-            </div>
-        </section>
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
 
-        <section id="work-in-progress">
-            <h2>Work in Progress</h2>
-            <div class="work-item">
-                <h3>Title of Work in Progress</h3>
-                <p>Brief description of your ongoing work...</p>
-            </div>
-        </section>
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 
-        <section id="policy">
-            <h2>Policy</h2>
-            <div class="policy-item">
-                <h3>Policy Work Title</h3>
-                <p class="institution">Institution Name (Year)</p>
-                <p>Description of your policy work...</p>
-                <div class="policy-links">
-                    <a href="#" class="pdf-link">PDF</a>
-                </div>
-            </div>
-        </section>
-    </main>
+nav a:hover {
+    color: #666;
+}
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-</body>
-</html> 
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.hero {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.about-content {
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-link {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-link:hover {
+    color: #666;
+}
+
+.publication, .working-paper, .work-item, .policy-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.journal, .status, .institution {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.abstract {
+    margin: 1rem 0;
+}
+
+.publication-links, .paper-links, .policy-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.pdf-link, .abstract-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.pdf-link:hover, .abstract-link:hover {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 15px;
+    }
+    
+    nav ul {
+        gap: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-links {
+        flex-wrap: wrap;
+    }
+} 
