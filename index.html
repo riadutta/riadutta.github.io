@@ -57,7 +57,7 @@
         <img src="ria_shot.jpeg" alt="Ria Dutta"><br>
    
 <p>
-<!-- Font Awesome (Place in <head>) -->
+<!-- Font Awesome (for GitHub, LinkedIn, CV) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -80,12 +80,30 @@
   background-color: #f4f4f4;
 }
 
-.social-button i,
-.social-button img {
+.social-button i {
   margin-right: 8px;
-  height: 16px;
-  width: auto;
-  vertical-align: middle;
+}
+
+.social-icon-only {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+  background-color: white;
+  margin-right: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.social-icon-only:hover {
+  background-color: #f4f4f4;
+}
+
+.social-icon-only img {
+  height: 20px;
+  width: 20px;
 }
 </style>
 
@@ -99,15 +117,16 @@
   <i class="fab fa-github"></i> GitHub
 </a>
 
-<!-- X (formerly Twitter) using actual X logo -->
-<a href="https://x.com/ria__dutta" class="social-button" target="_blank" aria-label="Twitter (X)">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/X_logo_2023.svg" alt="X logo"> X
+<!-- X icon only -->
+<a href="https://x.com/ria__dutta" class="social-icon-only" target="_blank" aria-label="Twitter (X)">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg" alt="X logo">
 </a>
 
 <!-- LinkedIn -->
 <a href="https://www.linkedin.com/in/riadutta28/" class="social-button" target="_blank" aria-label="LinkedIn">
   <i class="fab fa-linkedin"></i> LinkedIn
 </a>
+
 
 
         </p>
