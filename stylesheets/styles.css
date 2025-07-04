@@ -268,3 +268,18 @@ footer {
     color:#444;
   }
 }
+/* Social Button Styles */
+.social-button {
+  font-size: 13px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #595959;
+}
+
+.social-button i {
+  margin-right: 4px;
+}
+
+.social-button:hover {
+  color: #069;
+}
