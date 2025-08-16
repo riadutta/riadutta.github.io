@@ -179,15 +179,62 @@ section {
   box-sizing: border-box;
 }
 
+/* Ensure proper spacing between sections */
+section + section {
+  margin-top: 20px;
+}
+
+/* Prevent unwanted line breaks in content */
+section p {
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+section h2 {
+  margin: 0 0 15px 0;
+  line-height: 1.2;
+}
+
+/* Ensure consistent spacing for research items */
+section div[style*="margin-bottom: 15px"] {
+  margin-bottom: 15px !important;
+  line-height: 1.5;
+}
+
 small {
   font-size:11px;
 }
 
 hr {
-  border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin: 8px 0;
+  border: 0;
+  background: #e5e5e5;
+  height: 1px;
+  margin: 20px 0;
+  display: block;
+  clear: both;
+}
+
+/* Ensure hr elements don't create multiple lines on mobile */
+@media print, screen and (max-width: 960px) {
+  hr {
+    margin: 20px 0;
+    height: 1px;
+    background: #e5e5e5;
+    border: none;
+    display: block;
+    clear: both;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  hr {
+    margin: 20px 0;
+    height: 1px;
+    background: #e5e5e5;
+    border: none;
+    display: block;
+    clear: both;
+  }
 }
 
 footer {
@@ -262,6 +309,21 @@ footer {
 
   header li, header ul li + li + li {
     width:33%;
+  }
+  
+  /* Ensure proper mobile spacing */
+  section {
+    padding: 20px 0;
+    margin: 0 0 20px 0;
+  }
+  
+  hr {
+    margin: 20px 0;
+    height: 1px;
+    background: #e5e5e5;
+    border: none;
+    display: block;
+    clear: both;
   }
 }
 
