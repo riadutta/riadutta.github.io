@@ -186,7 +186,7 @@ hr {
   border:0;
   background:#e5e5e5;
   height:1px;
-  margin: 8px 0 8px;
+  margin: 12px 0 12px 0;
 }
 
 footer {
@@ -281,7 +281,6 @@ footer {
 
 .social-button i {
   margin-right: 4px;
-}
 }
 
 .social-button:hover {
