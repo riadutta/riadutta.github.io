@@ -180,7 +180,7 @@ section {
 
 
 section + section {
-  margin-top: 20px; /* single control of section spacing */
+  margin-top: 10px; /* reduced from 20px to 10px for tighter section spacing */
 }
 
 small {
