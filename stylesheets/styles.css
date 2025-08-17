@@ -178,26 +178,9 @@ section {
   box-sizing: border-box;
 }
 
-/* Ensure proper spacing between sections */
+
 section + section {
-  margin-top: 20px;
-}
-
-/* Prevent unwanted line breaks in content */
-section p {
-  margin: 0 0 15px 0;
-  line-height: 1.6;
-}
-
-section h2 {
-  margin: 0 0 15px 0;
-  line-height: 1.2;
-}
-
-/* Ensure consistent spacing for research items */
-section div[style*="margin-bottom: 15px"] {
-  margin-bottom: 15px !important;
-  line-height: 1.5;
+  margin-top: 20px; /* single control of section spacing */
 }
 
 small {
