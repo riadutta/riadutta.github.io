@@ -31,5 +31,3 @@ I studied the financial challenges faced by rural women entrepreneurs using prim
 I also serve as Director of 
 <a href="https://www.womenineconpolicy.com/" target="_blank" rel="noopener noreferrer">Women in Economics and Policy</a>, 
 a non-profit organization dedicated to advancing women’s roles in economics and allied fields.
-
-It’s easiest to reach me by email at <span data-email_b64="Z3Ntb29yZUBzdGFuZm9yZC5lZHU="></span>.
