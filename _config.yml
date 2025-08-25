@@ -39,7 +39,6 @@ remote_theme: jekyll/minima@acb0519
 
 # Determine order of header pages
 header_pages:
- - experience.markdown
  - research.markdown
 
 
@@ -78,4 +77,5 @@ minima:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
