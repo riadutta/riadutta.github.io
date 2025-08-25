@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Gideon Moore 
-email: gsmoore@stanford.edu
+title: Ria Dutta
+email: rdutta@povertyactionlab.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Economics PhD Student at Stanford University
+  Researcher
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.gideonmoore.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://riadutta.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
-domain: www.gideonmoore.com
+domain: https://riadutta.github.io/
 
 # Google tracking ID
 google_analytics: G-3PEXK1E60N
@@ -39,26 +39,25 @@ remote_theme: jekyll/minima@acb0519
 
 # Determine order of header pages
 header_pages:
- - education.markdown
  - experience.markdown
  - research.markdown
- - awards.markdown
+
 
 minima:
   skin: classic
   social_links:
     - title: Twitter
       icon: x-twitter
-      url: "https://twitter.com/GideonMoore"
+      url: "https://x.com/ria__dutta"
     - title: GitHub
       icon: github
-      url: "https://github.com/gmoore016"
+      url: "https://github.com/riadutta"
     - title: LinkedIn
       icon: linkedin
-      url: "https://www.linkedin.com/in/gideon-moore"
+      url: "https://www.linkedin.com/in/riadutta28/"
     - title: BlueSky
       icon: bluesky
-      url: "https://bsky.app/profile/gideonmoore.bsky.social"
+      url: "https://bsky.app/profile/riadutta.bsky.social"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -79,3 +78,4 @@ minima:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
