@@ -1,17 +1,14 @@
 ---
 # Display name
-title: Researcher
-
-# Name pronunciation (optional)
-name_pronunciation: Ria Dutta
+title: Ria Dutta
 
 # Full name (for SEO)
-first_name: Ria
-last_name: Dutta
+# first_name: Ria
+# last_name: Dutta
 
 # Status emoji
-status:
-  icon: 📷
+# status:
+  # icon: 📷
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,18 +17,18 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Researcher
 
 # Organizations/Affiliations to display in Biography blox
 # organizations:
  # - name: OpenAI
-    # url: https://openai.com/
+    #url: https://openai.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:ria.dutta@ifmr.ac.in'
     label: E-mail Me
   - icon: brands/x
     url: https://x.com/ria__dutta
@@ -52,8 +49,8 @@ interests:
   - Deep Learning
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
+  - area: MA Public Policy & Governance
+    institution: Azim Premji University
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -61,8 +58,8 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - area: BA Social Sciences
+    institution: Tata Institute of Social Sciences
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
