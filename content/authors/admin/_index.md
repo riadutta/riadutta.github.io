@@ -1,20 +1,17 @@
 ---
 # Display name
-title: 吳健雄
+title: Researcher
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Ria Dutta
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
-
-# Pronouns (optional)
-pronouns: she/her
+first_name: Ria
+last_name: Dutta
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 📷
 
 # Is this the primary user of the site?
 superuser: true
@@ -26,9 +23,9 @@ highlight_name: true
 role: Chief Scientist
 
 # Organizations/Affiliations to display in Biography blox
-organizations:
-  - name: OpenAI
-    url: https://openai.com/
+# organizations:
+ # - name: OpenAI
+    # url: https://openai.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -37,22 +34,22 @@ profiles:
     url: 'mailto:your-email@example.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://x.com/ria__dutta
+  # - icon: brands/instagram
+    # url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/riadutta
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://www.linkedin.com/in/riadutta28/
+  # - icon: academicons/google-scholar
+    # url: https://scholar.google.com/
+  # - icon: academicons/orcid
+    # url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Development Economics
+  - Political Economy
+  - Deep Learning
 
 education:
   - area: PhD Artificial Intelligence
