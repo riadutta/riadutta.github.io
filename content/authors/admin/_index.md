@@ -27,7 +27,7 @@ role: Researcher
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: email
+  - icon: envelope
     url: 'mailto:ria.dutta@ifmr.ac.in'
     label: E-mail Me
   - icon: brands/x
