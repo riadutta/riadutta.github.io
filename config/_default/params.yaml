@@ -35,12 +35,12 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      text: "Ria Dutta"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Ria Dutta. This work is licensed under CC BY NC ND 4.0'
     license:
       enable: true
       allow_derivatives: false
