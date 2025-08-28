@@ -2,6 +2,7 @@
 title: Recent & Upcoming Talks
 cms_exclude: true
 #url: talk
+draft: true
 
 # View
 view: card
