@@ -1,0 +1,30 @@
+/* Navbar background color */
+.navbar, .docs .navbar, header.navbar {
+  background-color: #b8c0ff !important;
+}
+
+/* Increase font size on bio (homepage biography block) */
+/* Target common bio/author content containers */
+.resume-biography-3 .biography, .resume-biography-3, .author, .author-card, .article-style, .page-body {
+  font-size: 1.25rem; /* ~20px */
+  line-height: 1.8;
+}
+
+/* Ensure links remain readable on the new navbar color */
+.navbar a, .navbar .nav-link, .navbar .navbar-brand, .navbar .dropdown-item {
+  color: #111 !important;
+}
+
+/* Hide name and role under the portrait on the homepage bio block */
+.resume-biography-3 .profile .portrait-title, .resume-biography-3 .portrait-title, .resume-biography-3 .avatar + h2, .resume-biography-3 .avatar + .portrait-title {
+  display: none !important;
+}
+
+/* Increase size of social icons */
+.resume-biography-3 .network-icon li a, .author .network-icon li a {
+  font-size: 1.75rem;
+}
+.resume-biography-3 .network-icon li a svg, .author .network-icon li a svg {
+  width: 32px;
+  height: 32px;
+}
