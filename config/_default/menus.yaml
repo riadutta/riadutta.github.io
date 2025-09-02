@@ -8,6 +8,6 @@ main:
     url: /
     weight: 10
   - name: Policy Reports
-    url: /#policy-reports
+    url: /policy-reports/
     weight: 20
 
