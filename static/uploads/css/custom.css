@@ -6,8 +6,20 @@
 /* Increase font size on bio (homepage biography block) */
 /* Target common bio/author content containers */
 .resume-biography-3 .biography, .resume-biography-3, .author, .author-card, .article-style, .page-body {
-  font-size: 1.25rem; /* ~20px */
+  font-size: 1.4rem; /* ~22.4px - increased from 1.25rem */
   line-height: 1.8;
+}
+
+/* Additional font size increase for specific bio content */
+.resume-biography-3 .biography p, .resume-biography-3 .biography .biography-content {
+  font-size: 1.5rem; /* ~24px for main bio text */
+  line-height: 1.7;
+}
+
+/* Increase font size for interests and education sections */
+.resume-biography-3 .interests, .resume-biography-3 .education {
+  font-size: 1.3rem; /* ~20.8px */
+  line-height: 1.6;
 }
 
 /* Ensure links remain readable on the new navbar color */
