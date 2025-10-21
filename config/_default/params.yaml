@@ -1,59 +1,74 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
+# SITE CONFIGURATION
+# Hugo Blox Builder Academic Theme
 # Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Tutorial: https://docs.hugoblox.com/tutorial/
 
-# Appearance
+# ============================================================================
+# APPEARANCE
+# ============================================================================
 appearance:
-  mode: system
+  mode: system  # Options: system, light, dark
   color: emerald
 
-# SEO
+# ============================================================================
+# SEO & MARKETING
+# ============================================================================
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
+    description: 'Personal academic website of Ria Dutta - showcasing research, publications, and professional portfolio.'
     twitter: 'GetResearchDev'
+  
   analytics:
     google_analytics: ''
     baidu_tongji: ''
     plausible: ''
     fathom: ''
     pirsch: ''
+  
   verification:
     google: ''
     baidu: ''
 
-# Site header
+# ============================================================================
+# HEADER
+# ============================================================================
 header:
   navbar:
     enable: true
-    blox: "navbar"
+    blox: navbar
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
-      text: ""
-      image: "flower.png"
+      text: ''
+      image: lotus.png
 
-# Site footer
+# ============================================================================
+# FOOTER
+# ============================================================================
 footer:
   copyright:
-    notice: '© {year} Ria Dutta. This work is licensed under CC BY NC ND 4.0'
+    notice: '© {year} Ria Dutta. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
 
-# Localization
+# ============================================================================
+# LOCALIZATION
+# ============================================================================
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
+  # Optionally add: first_day_of_week: 0
 
-# Site features
+# ============================================================================
+# SITE FEATURES
+# ============================================================================
 features:
   math:
     enable: false
