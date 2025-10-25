@@ -3,8 +3,8 @@
 title: Ria Dutta
 
 # Full name (for SEO)
- first_name: Ria
- last_name: Dutta
+first_name: Ria
+last_name: Dutta
 
 # Status emoji
 # status:
